@@ -1,1 +1,1 @@
-App Academy Curriculum course work by Y.E
+App Academy Curriculum Open Software Engineering course work by Y.E.
