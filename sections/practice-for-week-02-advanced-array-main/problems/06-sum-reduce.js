@@ -13,7 +13,12 @@ console.log(sumWithReduce([])); // 0
 */
 
 let sumWithReduce = function(nums) {
-  // Your code here
+  let sum = nums.reduce((a,c)=> a+c, 0 );
+  // if(typeof(sum)==='number'){
+    return sum;
+  // }else{
+  //   return 0;
+  // }
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
