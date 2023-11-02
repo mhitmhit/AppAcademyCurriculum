@@ -11,6 +11,15 @@ restSum(0); // => 0
 
 function restSum(...otherNums) {
   // Your code here
+//  return otherNums.reduce(
+//     function(value, sum){
+//       return value + sum;
+//     }
+//   );
+return otherNums.reduce(
+  (value,sum)=> value + sum
+);
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

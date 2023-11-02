@@ -1,6 +1,6 @@
 /***********************************************************************
-Write a function called `valuesInObject(obj)` that takes in an object and returns 
-an array of all the values within that Object. 
+Write a function called `valuesInObject(obj)` that takes in an object and returns
+an array of all the values within that Object.
 
 
 Do this once using using a `for...in` loop and once using `Object.values`.
@@ -15,7 +15,15 @@ valuesInObject(foods); // => ["tart", "sour", "sweet"]
 ***********************************************************************/
 
 function valuesInObject(obj) {
-  // Your code here
+  // using object values built in function
+  // return Object.values(obj);
+
+  // using loop
+  let valuesArray = [];
+  for (key in obj){
+    valuesArray.push(obj[key]);
+  }
+  return valuesArray;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

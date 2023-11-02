@@ -13,6 +13,17 @@ console.log(arrayConverter(["apple", "banana", "potato", "banana"])); // => {app
 
 function arrayConverter(array) {
   // Your code here
+  let obj = {};
+  let objKeysArray = [];
+  for (const value of array){
+    objKeysArray = Object.keys(obj);
+    if(!objKeysArray.includes(value)){
+      obj[value] = 1;
+    }else{
+      obj[value] = obj[value] + 1;
+    }
+  }
+  return obj;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
