@@ -29,6 +29,16 @@ console.log(countScores(peeps)); //=> { Anthony: 4, Fred: 4, Winnie: 6 }
 
 function countScores(people) {
   // Your code here
+let scoreBoard = {};
+
+people.forEach((currentObject)=>{
+  if (Object.keys(scoreBoard).includes(currentObject.name)){
+    scoreBoard[currentObject.name] = scoreBoard[currentObject.name] + currentObject.score;
+  }else{
+    scoreBoard[currentObject.name] = currentObject.score;
+  }
+});
+return scoreBoard;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

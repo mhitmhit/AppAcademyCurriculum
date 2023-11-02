@@ -13,8 +13,20 @@ console.log(stringConverter("raccoon")); // => {r: 1, a: 1, c: 2, o: 2, n: 1}
 
 function stringConverter(string) {
   // Your code here
-  
+  let stringObject = {};
+  let objectArray = [];
+
+  for (i=0; i<string.length; i++){
+    objectArray = Object.keys(stringObject);
+    if (objectArray.includes(string[i])){
+      stringObject[string[i]] = stringObject[string[i]] + 1;
+    }else{
+      stringObject[string[i]] = 1;
+    }
+  }
+  return stringObject;
 }
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = stringConverter;
