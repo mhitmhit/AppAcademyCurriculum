@@ -1,10 +1,19 @@
-let maxWithReduce = function(nums) {
+function stringConverter(string) {
   // Your code here
-  return nums.reduce((a,c)=>{
-    if (a < c){
-      return c;
-    }
-  });
-};
+  let stringObject = {};
+  let objectArray = [];
 
-console.log(maxWithReduce([1,2,3,4]));
+  for (i=0; i<string.length; i++){
+    objectArray = Object.keys(stringObject);
+    console.log("object aray is" + objectArray);
+    if (objectArray.includes(string[i])){
+      stringObject[string[i]] = stringObject[string[i]] + 1;
+    }else{
+      stringObject[string[i]] = 1;
+    }
+  }
+  return stringObject;
+}
+
+
+console.log(stringConverter("test"));
