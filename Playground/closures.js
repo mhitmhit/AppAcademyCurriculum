@@ -1,0 +1,27 @@
+function createCounter(){
+    let count =0;
+    return function (){
+        count++;
+        return count;
+    };
+}
+
+let counter1 = createCounter();
+
+console.log(counter1);          //[Function (anonymous)]
+console.log(counter1());        // 1
+console.log(counter1());        // 2
+
+function pizzaMaker(topping){
+    let order = "i want a pizza with ";
+    function oven(){
+        return order + topping;
+    };
+
+    return oven;
+}
+
+let order1 = pizzaMaker("onions");
+
+console.log(order1());          //error order1() is not a function
+console.log(order1);            // "i want a pizza with onions"
