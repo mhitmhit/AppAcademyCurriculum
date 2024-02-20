@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // closure to make variables private:
             // counter variable is a closure.
 function createCounter() {
@@ -30,7 +29,6 @@ function createCounter() {
 
     return string === reverse();
   }
-=======
 function createCounter(){
     let count =0;
     return function (){
@@ -58,4 +56,3 @@ let order1 = pizzaMaker("onions");
 
 console.log(order1());          //error order1() is not a function
 console.log(order1);            // "i want a pizza with onions"
->>>>>>> 6d5633c809a4ae7872ccff818e2327c2d1458a0a
